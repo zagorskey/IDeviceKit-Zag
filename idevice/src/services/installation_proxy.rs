@@ -96,6 +96,11 @@ impl InstallationProxyClient {
             "ClientOptions": {
                 "ApplicationType": application_type,
                 "BundleIDs":? bundle_identifiers,
+                "ReturnAttributes": [
+                    "CFBundleIdentifier",
+                    "CFBundleShortVersionString",
+                    "CFBundleVersion",
+                ],
             }
         });
         self.idevice.send_plist(req).await?;
