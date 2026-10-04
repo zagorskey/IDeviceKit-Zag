@@ -100,6 +100,13 @@ impl InstallationProxyClient {
                     "CFBundleIdentifier",
                     "CFBundleShortVersionString",
                     "CFBundleVersion",
+                    "CFBundleDisplayName",
+                    "CFBundleName",
+                    "CFBundleExecutable",
+                    "MinimumOSVersion",
+                    "ApplicationType",
+                    "SignerIdentity",
+                    "TeamIdentifier",
                 ],
             }
         });
